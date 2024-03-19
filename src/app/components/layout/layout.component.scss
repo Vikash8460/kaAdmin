@@ -1,0 +1,69 @@
+// Base styles for consistency
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  // App Header styles
+  app-header {
+    background-color: #16a9ac;
+    color: #c44d4d;
+    padding: 1rem 2rem;
+    text-align: center;
+    
+    // Example of responsive design for smaller screens
+    @media (max-width: 768px) {
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  // App Dashboard styles
+  app-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-left: 200px; // Assuming the sidenav is 200px wide
+    min-height: calc(100vh - 60px); // Assuming the header is 60px tall
+    
+    // Responsive adjustments
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+  
+  // App Side Navigation styles
+  app-sidenav {
+    background-color: #343a40;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    padding: 1rem;
+    
+    // Example of a simple hover effect for links or items in the sidenav
+    a {
+      color: #9fcdff;
+      text-decoration: none;
+      
+      &:hover {
+        color: #bbe1ff;
+      }
+    }
+    
+    // Responsive adjustments
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+  
