@@ -10,6 +10,8 @@ import { SidenavComponent } from '../../components/sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list'; 
 import { MatIconModule } from '@angular/material/icon'; 
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar'; 
 
 
 @NgModule({
@@ -24,7 +26,10 @@ import { MatIconModule } from '@angular/material/icon';
     AdminRoutingModule,
     MatSidenavModule, 
     MatListModule,
-    MatIconModule 
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule
+    
   ]
 })
 export class AdminModule { }
