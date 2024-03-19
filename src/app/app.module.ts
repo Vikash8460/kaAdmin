@@ -12,8 +12,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     AppComponent,
     SigninComponent,
     SignupComponent,
-    NotFoundComponent,
-   
+    NotFoundComponent,   
   ],
   imports: [
     BrowserModule,
