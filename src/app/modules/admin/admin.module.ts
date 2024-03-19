@@ -7,6 +7,8 @@ import { DashboardComponent } from '../../components/dashboard/dashboard.compone
 import { HeaderComponent } from '../../components/header/header.component';
 import { SidenavComponent } from '../../components/sidenav/sidenav.component';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { SidenavComponent } from '../../components/sidenav/sidenav.component';
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    MatSidenavModule, // Importing MatSidenavModule
   ]
 })
 export class AdminModule { }
