@@ -8,6 +8,8 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { SidenavComponent } from '../../components/sidenav/sidenav.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list'; 
+import { MatIconModule } from '@angular/material/icon'; 
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    MatSidenavModule, // Importing MatSidenavModule
+    MatSidenavModule, 
+    MatListModule,
+    MatIconModule 
   ]
 })
 export class AdminModule { }
