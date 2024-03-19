@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,7 @@ import { LayoutComponent } from './components/layout/layout.component';
     SigninComponent,
     SignupComponent,
     NotFoundComponent,
-    LayoutComponent
+   
   ],
   imports: [
     BrowserModule,

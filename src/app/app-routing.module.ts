@@ -10,12 +10,12 @@ const routes: Routes = [
 //{ path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'signup', component: SignupComponent },
 
-  // {
-  //   path: 'admin',
-  //   // canActivate: [authGuard],
-  //   loadChildren: () =>
-  //     import('./_modules/admin/admin.module').then((m) => m.AdminModule),
-  // },
+  {
+    path: 'admin',
+    // canActivate: [authGuard],
+    loadChildren: () =>
+      import('./modules/admin/admin.module').then((m) => m.AdminModule),
+  },
   { path: '**', component: NotFoundComponent },
 ];
 
