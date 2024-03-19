@@ -1,1 +1,46 @@
-<p>header works!</p>
+<mat-toolbar>
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto">
+          <button mat-icon-button (click)="toggleSidebar()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+    
+        <div class="col-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <button mat-button [matMenuTriggerFor]="menu" class="user d-flex align-items-center">
+                <img src="assets/img/undraw_profile.svg" alt="" class="user-image mr-1 p-2" />
+                <span>Vikash Kamat</span>
+                <mat-icon class="ml-1">keyboard_arrow_down</mat-icon>
+              </button>
+  
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="/admin/profile">
+                  <mat-icon>person</mat-icon>
+                  <span>Profile</span>
+                </button>
+  
+                <button mat-menu-item>
+                  <mat-icon>settings</mat-icon>
+                  <span>Settings</span>
+                </button>
+  
+                <button mat-menu-item>
+                  <mat-icon>subject</mat-icon>
+                  <span>Activity Log</span>
+                </button>
+                <hr>
+  
+                <button mat-menu-item>
+                  <mat-icon>logout</mat-icon>
+                  <span> Logout</span>
+                </button>
+              </mat-menu>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </mat-toolbar>
