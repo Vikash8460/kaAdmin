@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from '../../components/layout/layout.component';
 import { DashboardComponent } from '../../components/dashboard/dashboard.component';
+import { HeaderComponent } from '../../components/header/header.component';
+import { SidenavComponent } from '../../components/sidenav/sidenav.component';
 
 const routes: Routes = [
   {
@@ -9,6 +11,7 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: 'dashboard', component: DashboardComponent },
+      { path: 'header', component: HeaderComponent },
       { path: '', redirectTo: '/admin/dashboard', pathMatch: 'full' },
     ],
   },
