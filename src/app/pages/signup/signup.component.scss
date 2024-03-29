@@ -1,0 +1,59 @@
+// // Import Bootstrap if needed
+// @import "~bootstrap/scss/bootstrap";
+
+// Custom styling for the section
+section.text-center {
+  .bg-image {
+    height: 300px; // Adjust height as needed
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .card-body {
+    color: #333; // Text color
+  }
+
+  h2 {
+    color: #333; // Heading color
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  input.form-control {
+    border-radius: 5px;
+    border-color: #ccc;
+  }
+
+  button.btn-primary {
+    background-color: #007bff; // Primary button color
+    border-color: #007bff;
+  }
+
+  button.btn-link {
+    color: #007bff; // Link button color
+  }
+
+  .btn-floating {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f9fa; // Floating button background color
+    color: #007bff; // Floating button icon color
+    border: 1px solid #dee2e6;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #e9ecef; // Floating button hover background color
+    }
+  }
+}
