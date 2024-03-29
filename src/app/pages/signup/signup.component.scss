@@ -10,16 +10,16 @@ section.text-center {
   }
 
   .card {
-    background-color: white;
+    background-color: rgb(106, 204, 237);
     border-radius: 10px;
   }
 
   .card-body {
-    color: #333; // Text color
+    color: #5a1313; // Text color
   }
 
   h2 {
-    color: #333; // Heading color
+    color: #350202; // Heading color
   }
 
   form {
@@ -27,12 +27,12 @@ section.text-center {
   }
 
   input.form-control {
-    border-radius: 5px;
-    border-color: #ccc;
+    border-radius: 15px;
+    border-color: #3e0505;
   }
 
   button.btn-primary {
-    background-color: #007bff; // Primary button color
+    background-color: #0400ff; // Primary button color
     border-color: #007bff;
   }
 
@@ -45,7 +45,7 @@ section.text-center {
     height: 40px;
     border-radius: 50%;
     background-color: #f8f9fa; // Floating button background color
-    color: #007bff; // Floating button icon color
+    color: #ad0752; // Floating button icon color
     border: 1px solid #dee2e6;
     align-items: center;
     justify-content: center;
@@ -53,7 +53,7 @@ section.text-center {
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #e9ecef; // Floating button hover background color
+      background-color: #06c870; // Floating button hover background color
     }
   }
 }
